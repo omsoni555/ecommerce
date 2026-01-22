@@ -14,7 +14,7 @@ const Footer = () => {
               <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">Contact Us</Link></li>
               <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">About Us</Link></li>
               <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">Careers</Link></li>
-              <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">Flipkart Stories</Link></li>
+                <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">NexCart Stories</Link></li>
               <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">Press</Link></li>
               <li><Link to="#" className="text-sm text-background/80 hover:text-background transition-colors">Corporate Information</Link></li>
             </ul>
@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-background/80">
                 <Mail className="w-4 h-4" />
-                support@flipkart.com
+                support@nexcart.com
               </li>
               <li className="flex items-center gap-2 text-sm text-background/80">
                 <Phone className="w-4 h-4" />
@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-sm text-background/80">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                Flipkart Internet Pvt Ltd,<br />
+                NexCart Internet Pvt Ltd,<br />
                 Bangalore, Karnataka
               </li>
             </ul>
@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-background/60">
-              © 2026 Flipkart Clone. For demonstration purposes only.
+              © 2026 NexCart. For demonstration purposes only.
             </p>
             <div className="flex items-center gap-4">
               <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="Payment Methods" className="h-6 opacity-80" />
