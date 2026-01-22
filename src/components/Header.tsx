@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary-foreground tracking-tight">Flipkart</span>
+              <span className="text-xl font-bold text-primary-foreground tracking-tight">NexCart</span>
               <span className="text-[10px] text-secondary italic flex items-center gap-1">
                 Explore <span className="text-primary-foreground/80">Plus</span>
                 <span className="text-secondary">✦</span>
