@@ -44,6 +44,11 @@ const HeroSlider = () => {
             <img
               src={banner.image}
               alt={banner.title}
+              loading="lazy"
+              onError={(e) => {
+                const img = e.currentTarget;
+                if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+              }}
               className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
             />
             <div className="absolute inset-0 flex items-center justify-start px-8 md:px-16 lg:px-24">

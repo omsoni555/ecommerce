@@ -63,7 +63,16 @@ const Header = () => {
                       to={`/category/${cat.slug}`}
                       className="flex items-center gap-3 px-4 py-2 text-sm text-foreground hover:bg-accent transition-colors"
                     >
-                      <img src={cat.image} alt={cat.name} className="w-8 h-8 rounded-full object-cover" />
+                       <img
+                         src={cat.image}
+                         alt={cat.name}
+                         loading="lazy"
+                         onError={(e) => {
+                           const img = e.currentTarget;
+                           if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+                         }}
+                         className="w-8 h-8 rounded-full object-cover"
+                       />
                       {cat.name}
                     </Link>
                   ))}
@@ -181,7 +190,16 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center gap-3 py-2 text-foreground hover:text-primary transition-colors"
               >
-                <img src={cat.image} alt={cat.name} className="w-6 h-6 rounded-full object-cover" />
+                 <img
+                   src={cat.image}
+                   alt={cat.name}
+                   loading="lazy"
+                   onError={(e) => {
+                     const img = e.currentTarget;
+                     if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+                   }}
+                   className="w-6 h-6 rounded-full object-cover"
+                 />
                 {cat.name}
               </Link>
             ))}
