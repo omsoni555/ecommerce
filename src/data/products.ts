@@ -39,7 +39,7 @@ export const categories: Category[] = [
   { id: "5", name: "Appliances", image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=200&h=200&fit=crop", slug: "appliances" },
   { id: "6", name: "Beauty", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&h=200&fit=crop", slug: "beauty" },
   { id: "7", name: "Toys & Baby", image: "https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=200&h=200&fit=crop", slug: "toys" },
-  { id: "8", name: "Sports", image: "https://images.unsplash.com/photo-1461896836934- voices?w=200&h=200&fit=crop", slug: "sports" },
+  { id: "8", name: "Sports", image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=200&h=200&fit=crop", slug: "sports" },
   { id: "9", name: "Grocery", image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&h=200&fit=crop", slug: "grocery" },
 ];
 

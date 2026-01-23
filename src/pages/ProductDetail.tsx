@@ -84,6 +84,10 @@ const ProductDetail = () => {
                 <img
                   src={product.image}
                   alt={product.name}
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+                  }}
                   className="w-full h-full object-contain animate-fade-in"
                 />
               </div>
@@ -102,6 +106,11 @@ const ProductDetail = () => {
                     <img
                       src={product.image}
                       alt={`View ${i + 1}`}
+                      loading="lazy"
+                      onError={(e) => {
+                        const img = e.currentTarget;
+                        if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+                      }}
                       className="w-full h-full object-cover opacity-80"
                     />
                   </button>

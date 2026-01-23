@@ -50,6 +50,11 @@ const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
           <img
             src={product.image}
             alt={product.name}
+            loading="lazy"
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+            }}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
         </div>

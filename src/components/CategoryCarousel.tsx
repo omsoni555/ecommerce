@@ -50,6 +50,11 @@ const CategoryCarousel = () => {
                   <img
                     src={category.image}
                     alt={category.name}
+                    loading="lazy"
+                    onError={(e) => {
+                      const img = e.currentTarget;
+                      if (!img.src.endsWith('/placeholder.svg')) img.src = '/placeholder.svg';
+                    }}
                     className="w-full h-full object-cover"
                   />
                 </div>
