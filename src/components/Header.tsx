@@ -12,17 +12,17 @@ const Header = () => {
   const [showCategories, setShowCategories] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-primary shadow-lg">
+    <header className="sticky top-0 z-50 bg-secondary shadow-lg">
       {/* Main Header */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary-foreground tracking-tight">NexCart</span>
-              <span className="text-[10px] text-secondary italic flex items-center gap-1">
-                Explore <span className="text-primary-foreground/80">Plus</span>
-                <span className="text-secondary">✦</span>
+              <span className="text-xl font-bold text-secondary-foreground tracking-tight">NexCart</span>
+              <span className="text-[10px] text-secondary-foreground/80 italic flex items-center gap-1">
+                Explore <span className="text-secondary-foreground/70">Plus</span>
+                <span className="text-primary">✦</span>
               </span>
             </div>
           </Link>
@@ -50,7 +50,7 @@ const Header = () => {
               onMouseEnter={() => setShowCategories(true)}
               onMouseLeave={() => setShowCategories(false)}
             >
-              <button className="flex items-center gap-1 text-primary-foreground hover:text-secondary transition-colors font-medium">
+              <button className="flex items-center gap-1 text-secondary-foreground hover:text-primary transition-colors font-medium">
                 Categories
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -71,27 +71,27 @@ const Header = () => {
               )}
             </div>
 
-            <Link to="/wishlist" className="relative flex items-center gap-2 text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <Link to="/wishlist" className="relative flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors font-medium">
               <Heart className="w-5 h-5" />
               <span className="hidden lg:inline">Wishlist</span>
               {wishlistCount > 0 && (
-                <span className="absolute -top-2 -right-2 lg:-top-1 lg:right-12 w-5 h-5 flex items-center justify-center bg-secondary text-secondary-foreground text-xs font-bold rounded-full">
+                <span className="absolute -top-2 -right-2 lg:-top-1 lg:right-12 w-5 h-5 flex items-center justify-center bg-primary text-primary-foreground text-xs font-bold rounded-full">
                   {wishlistCount}
                 </span>
               )}
             </Link>
 
-            <Link to="/cart" className="relative flex items-center gap-2 text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <Link to="/cart" className="relative flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors font-medium">
               <ShoppingCart className="w-5 h-5" />
               <span className="hidden lg:inline">Cart</span>
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 lg:-top-1 lg:right-6 w-5 h-5 flex items-center justify-center bg-secondary text-secondary-foreground text-xs font-bold rounded-full">
+                <span className="absolute -top-2 -right-2 lg:-top-1 lg:right-6 w-5 h-5 flex items-center justify-center bg-primary text-primary-foreground text-xs font-bold rounded-full">
                   {cartCount}
                 </span>
               )}
             </Link>
 
-            <button className="flex items-center gap-2 text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <button className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors font-medium">
               <User className="w-5 h-5" />
               <span className="hidden lg:inline">Login</span>
             </button>
@@ -99,17 +99,17 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-3">
-            <Link to="/cart" className="relative text-primary-foreground">
+            <Link to="/cart" className="relative text-secondary-foreground">
               <ShoppingCart className="w-6 h-6" />
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-secondary text-secondary-foreground text-xs font-bold rounded-full">
+                <span className="absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-primary text-primary-foreground text-xs font-bold rounded-full">
                   {cartCount}
                 </span>
               )}
             </Link>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-primary-foreground"
+              className="text-secondary-foreground"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
