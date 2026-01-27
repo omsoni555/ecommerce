@@ -59,10 +59,10 @@ const Footer = () => {
                 <li className="flex items-start gap-2 text-sm text-secondary-foreground/80">
                 <MapPin className="w-4 h-4 mt-0.5" />
                 NexCart Internet Pvt Ltd,<br />
-                Bangalore, Karnataka
+                Rewa, India
               </li>
             </ul>
-
+            
             {/* Social Icons */}
             <div className="flex items-center gap-4 mt-6">
               <a href="#" className="w-8 h-8 flex items-center justify-center rounded-full bg-secondary-foreground/10 hover:bg-secondary-foreground/20 transition-colors">

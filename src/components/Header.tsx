@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ShoppingCart, Heart, User, Menu, X, ChevronDown } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -100,10 +100,13 @@ const Header = () => {
               )}
             </Link>
 
-            <button className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors font-medium">
-              <User className="w-5 h-5" />
-              <span className="hidden lg:inline">Login</span>
-            </button>
+              <Link
+                to="/login"
+                className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors font-medium"
+              >
+                <User className="w-5 h-5" />
+                <span className="hidden lg:inline">Login</span>
+              </Link>
           </nav>
 
           {/* Mobile Menu Button */}

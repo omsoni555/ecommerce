@@ -45,13 +45,13 @@ const ProductSection = ({ title, products, viewAllLink, isCarousel = false }: Pr
             <button
               onClick={() => scroll('left')}
               className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-20 flex items-center justify-center bg-card shadow-lg rounded-r-sm hover:shadow-xl transition-shadow"
-            >
+            >a
               <ChevronLeft className="w-6 h-6 text-muted-foreground" />
             </button>
             <button
               onClick={() => scroll('right')}
               className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-20 flex items-center justify-center bg-card shadow-lg rounded-l-sm hover:shadow-xl transition-shadow"
-            >
+            >b
               <ChevronRight className="w-6 h-6 text-muted-foreground" />
             </button>
 

@@ -21,12 +21,8 @@ const CategoryCarousel = () => {
       <div className="container mx-auto px-4">
         <div className="relative">
           {/* Scroll Buttons */}
-          <button
-            onClick={() => scroll('left')}
-            className="absolute -left-2 md:left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-card shadow-md rounded-full hover:shadow-lg transition-shadow"
-          >
-            <ChevronLeft className="w-5 h-5 text-muted-foreground" />
-          </button>
+              <button onClick={() => scroll('left')} className="absolute -left-2 md:left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-card shadow-md rounded-full hover:shadow-lg transition-shadow" > <ChevronLeft className="w-5 h-5 text-muted-foreground" /> </button>
+
           <button
             onClick={() => scroll('right')}
             className="absolute -right-2 md:right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center bg-card shadow-md rounded-full hover:shadow-lg transition-shadow"

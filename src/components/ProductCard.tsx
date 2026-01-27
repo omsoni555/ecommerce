@@ -66,7 +66,7 @@ const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
             "absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-card shadow-md transition-all duration-200 hover:scale-110",
             inWishlist ? "text-offer" : "text-muted-foreground hover:text-offer"
           )}
-        >
+        >c
           <Heart className={cn("w-4 h-4", inWishlist && "fill-current")} />
         </button>
 

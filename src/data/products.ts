@@ -47,10 +47,10 @@ export const banners: Banner[] = [
   {
     id: "1",
     image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=400&fit=crop",
-    title: "Big Billion Days",
+    title: "Flash Saving Days",
     subtitle: "Up to 80% OFF on Electronics",
     link: "/offers",
-    bgColor: "from-primary to-primary/80",
+    bgColor: "from-primary to-secondary/80",
   },
   {
     id: "2",
